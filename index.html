@@ -1731,7 +1731,7 @@ body::after {
       <div class="sticker-content">
         <div class="sticker-kicker">cena extra</div>
         <h2 class="sticker-title">Só pra registrar<br><span class="glow-text">nós dois</span> assim</h2>
-        <p class="sticker-subtitle">Antes de voltar pro começo, deixei uma última cena com a prévia de nós dois juntos.</p>
+        <p class="sticker-subtitle">Antes de voltar pro começo, nós dois juntinhos.</p>
         <div class="sticker-showcase">
           <div class="sticker-orbit"></div>
           <div class="sticker-hearts"><span>💗</span><span>💖</span><span>💕</span><span>💘</span></div>
@@ -1921,14 +1921,14 @@ function finishCinematicIntro() {
 
 function playCinematicIntro() {
   updateCinematicLine(0);
-  const steps = [2800, 6400, 10200, 14000];
+  const steps = [3000, 7500, 12000, 15500];
   steps.forEach((ms, idx) => {
     cinematicIntervals.push(setTimeout(() => {
       cinematicIndex = idx;
       updateCinematicLine(idx);
     }, ms));
   });
-  cinematicIntervals.push(setTimeout(finishCinematicIntro, 17500));
+  cinematicIntervals.push(setTimeout(finishCinematicIntro, 19000));
 }
 
 playCinematicIntro();
